@@ -1,0 +1,9 @@
+#nav-bar{
+    background-color: #292F36;
+}
+
+#navbar-searchbar{
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+}
