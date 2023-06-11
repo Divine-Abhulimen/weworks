@@ -1,9 +1,57 @@
-#nav-bar{
+#navbar {
     background-color: #292F36;
 }
 
-#navbar-searchbar{
-    border-radius: 50px;
-    margin: 0 auto;
-    display: block;
+.navbar-brand {
+    margin-right: 40vh;
+}
+
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.navbar-nav {
+    gap: 4vh;
+}
+
+.search-bar {
+    width: 50%;
+    max-width: 500px;
+    height: 40px;
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-bar input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1436px) {
+    .search-bar {
+        width: 70%;
+    }
+    .form-inline{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-bar {
+        width: 80%;
+    }
 }
